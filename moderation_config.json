@@ -1,0 +1,7 @@
+{
+  "bullying_terms": ["idiot", "stupid", "kill", "die", "hate"],
+  "inappropriate_terms": ["damn", "crap"],
+  "warning_threshold": 3,
+  "temp_ban_duration_minutes": 60,
+  "censor_mask": "***********"
+}
