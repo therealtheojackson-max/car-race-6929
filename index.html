@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Race</title>
+  <style>
+    body { background: #111; color: white; text-align: center; }
+    #car { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); font-size: 40px; }
+  </style>
+</head>
+<body>
+  <h1>Car Race</h1>
+  <p>Press ← → to move the car</p>
+  <div id="car">🚗</div>
+
+  <script>
+    let x = 50;
+    document.addEventListener("keydown", e => {
+      if (e.key === "ArrowLeft") x -= 5;
+      if (e.key === "ArrowRight") x += 5;
+      document.getElementById("car").style.left = x + "%";
+    });
+  </script>
+</body>
+</html>
